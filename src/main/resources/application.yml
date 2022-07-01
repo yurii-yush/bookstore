@@ -1,0 +1,25 @@
+spring:
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+  jpa:
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQL10Dialect
+    show-sql: true
+  datasource:
+      url: jdbc:postgresql://localhost:5432/BookStore
+      username: root
+      password: 1525
+      driver-class-name: org.postgresql.Driver
+      initialization-mode: always
+      schema: classpath*:database/schema.sql
+server:
+  error:
+    include-stacktrace: always
+
+
+
+
+
+
+
